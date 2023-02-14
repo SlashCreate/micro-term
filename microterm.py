@@ -26,3 +26,5 @@ def input_cmd(prompt='> ', check=True, errmsg='No command', msg='Executing', spl
     cmdlist.index(name)
     print(msg)
     term(inp.split())
+  except:
+    print(errmsg)
