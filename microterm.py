@@ -20,11 +20,11 @@ def keep():
 def run_sys(cmd: str):
   os.system(cmd)
   
-def input_cmd(prompt='> ', check=True, errmsg='No command', msg='Executing', spliter='//'):
+def input_cmd(prompt='> ', check=True, errmsg='No command', msg='Executing'):
   try:
     inp = input(prompt)
     cmdlist.index(name)
     print(msg)
-    term(inp.split())
+    term(inp)
   except:
     print(errmsg)
