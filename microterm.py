@@ -20,10 +20,9 @@ def keep():
 def run_sys(cmd: str):
   os.system(cmd)
   
-def input_cmd(prompt='> ', check=True, errmsg='No command', msg='Executing'):
+def input_cmd(prompt='> ', msg='', errmsg=''):
   try:
     inp = input(prompt)
-    cmdlist.index(name)
     print(msg)
     term(inp)
   except:
